@@ -1,0 +1,8 @@
+.setText{
+    cursor: pointer;
+}
+@media(max-width: 788px) {
+    .setText{
+        display: none;
+    }
+}
