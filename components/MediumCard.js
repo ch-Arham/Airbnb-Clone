@@ -8,11 +8,11 @@ const MediumCard = ({ img, title }) => {
                 src={img}
                 alt="Location Images"
                 layout="fill"
-                className="rounded-xl"
+                className="rounded-xl active:opacity-95"
             />
             
         </div>
-        <h3 className="text-2xl mt-3 font-medium">{title}</h3>
+        <h3 className="text-2xl mt-3 font-medium text-center text-gray-900">{title}</h3>
     </section>
   )
 }

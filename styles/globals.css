@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@layer components{
+  .button {
+    @apply px-4 py-2 border rounded-full cursor-pointer hover:shadow-lg active:scale-95 active:bg-gray-100 transition transform duration-100 ease-in
+  }
+}
+
 p{
     font-weight: 600;
 }
@@ -24,4 +31,9 @@ p{
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
     background: #555;
+  }
+
+
+  .Typewriter__cursor,.mapboxgl-control-container{
+    display: none;
   }
