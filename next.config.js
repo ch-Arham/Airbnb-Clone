@@ -1,4 +1,8 @@
 /** @type {import('next').NextConfig} */
+
+const dotenv = require('dotenv');
+dotenv.config({path:".env"});
+
 const nextConfig = {
   reactStrictMode: true,
   images: {
@@ -6,7 +10,7 @@ const nextConfig = {
     //We set domain for images that accept any image from this source
   },
   env: {
-    MAPBOX_KEY: 'pk.eyJ1IjoiYXJoYW1raGF3YXIyNDgiLCJhIjoiY2wwN2s1ZnpkMWdjNzNjcDM3aTlzYnY1YSJ9.HwXDgDxJxAgvTss7ko7cTg'
+    MAPBOX_KEY: process.env.MAPBOX_KEY
   }
 }
 
